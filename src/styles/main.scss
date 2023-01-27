@@ -1,0 +1,33 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --teal: #008891;
+  --tealLight: #74c6c9;
+  --dark: #242424;
+  --tomato: #ed6616;
+  --palegreen: #c2d97a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #ffffff;
+  color: var(--dark);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+@import './reset.scss';
+@import './fonts.scss';
+@import './flexbox.scss';
