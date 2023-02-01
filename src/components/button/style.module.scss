@@ -2,10 +2,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  padding: 12px 40px;
+  padding: 12px 30px;
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
+  transition: 0.3s;
   &.fluid {
     width: 100%;
   }
@@ -13,7 +14,7 @@
   &.outlined {
     background-color: transparent;
     border: 1px solid var(--tomato);
-    transition: 0.5s;
+
     &:hover {
       border-color: darken(#ed6616, 10%);
       color: #ffffff;
@@ -21,9 +22,10 @@
   }
   &.orange {
     background: linear-gradient(93.45deg, #ed6616 4.22%, #fe7a2c 91.85%);
+    background-size: cover;
+    background-repeat: repeat-x;
     &:hover {
-      background-color: #ff9b3f;
-      color: #ffffff;
+      background-position: 0 0;
     }
   }
   &.outlinedWhite {
@@ -32,6 +34,13 @@
     &:hover {
       border-color: darken(#fff, 10%);
       color: #ffffff;
+    }
+  }
+  &.primary {
+    background: #74c6c9;
+    color: #ffffff;
+    &:hover {
+      background: darken(#74c6c9, 10%);
     }
   }
 }

@@ -70,11 +70,7 @@ export const Select: FC<TSelectProps> = ({
       {isOpen && (
         <ul className={styles.selectList}>
           {options.map((option, idx) => (
-            <li
-              className={styles.listItem}
-              //   active={activeList === idx}
-              onClick={() => onOptionClicked(option, idx)}
-              key={idx}>
+            <li className={styles.listItem} onClick={() => onOptionClicked(option, idx)} key={idx}>
               <div className={styles.text}>{option}</div>
             </li>
           ))}

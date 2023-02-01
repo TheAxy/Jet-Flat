@@ -57,3 +57,21 @@
     text-align: right;
   }
 }
+
+.c {
+  &Dark {
+    color: var(--dark);
+  }
+  &TealLight {
+    color: var(--tealLight);
+  }
+  &Tomato {
+    color: var(--tomato);
+  }
+  &Teal {
+    color: var(--teal);
+  }
+  &White {
+    color: var(--white);
+  }
+}

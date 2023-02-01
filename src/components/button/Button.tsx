@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import React, { FC } from 'react';
 import styles from './style.module.scss';
 
-type IButtonVariant = 'outlined' | 'orange' | 'outlinedWhite';
+type IButtonVariant = 'outlined' | 'orange' | 'outlinedWhite' | 'primary';
 
 type Props = {
   text?: string;

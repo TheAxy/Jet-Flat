@@ -1,6 +1,11 @@
 .header {
   width: 100%;
   background-color: var(--teal);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
   &__top {
     padding-top: 21px;
     padding-bottom: 27px;
@@ -50,6 +55,7 @@
 .lk {
   width: 245px;
   height: 52px;
+  padding: 12px 30px;
 }
 
 .list {

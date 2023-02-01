@@ -7,21 +7,25 @@ import { Button } from './components/button';
 import { Radio } from './components/radio';
 import { Select } from './components/select/Select';
 import { Header } from './components/header';
+import { Cookie } from './components/cookie';
+import { Footer } from './components/footer';
 
 function App() {
   const [idx, setIdx] = React.useState(0);
   return (
     <BrowserRouter>
       <Header />
-      <div className="wrapper" style={{ margin: 100 }}>
-        <Checkbox />
+      <div className="wrapper">
+        {/* <Checkbox />
         <Button variant="orange">Проверить цены</Button>
         <Button variant="outlined">Проверить цены</Button>
         <Radio />
-        <Select options={['ghh', 'gghgj']} selectedIbdex={idx} setSelectedIndex={setIdx} />
+        <Select options={['ghh', 'gghgj']} selectedIbdex={idx} setSelectedIndex={setIdx} /> */}
         <Routes>
           <Route path={routes.main} element={<Main />} />
         </Routes>
+        {/* <Cookie /> */}
+        <Footer />
       </div>
     </BrowserRouter>
   );

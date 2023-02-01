@@ -10,10 +10,11 @@ type Props = {
   name?: string;
   children?: ReactNode;
   bgColor?: string;
+  disabled?: boolean;
 };
 
 export const Checkbox: FC<Props> = (props: Props): ReactElement => {
-  const { checked, onChange, label, name, children, bgColor } = props;
+  const { checked, onChange, label, name, children, bgColor, disabled } = props;
   return (
     <label className={styles['label-container']}>
       <input
@@ -22,6 +23,7 @@ export const Checkbox: FC<Props> = (props: Props): ReactElement => {
         type="checkbox"
         checked={checked}
         onChange={onChange}
+        disabled={disabled}
       />
       <span className={clsx(styles['checkbox-icon'], bgColor && styles[bgColor])} />
       {children}

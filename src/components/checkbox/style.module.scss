@@ -40,6 +40,9 @@
   opacity: 0;
   position: absolute;
   width: 0;
+  &:disabled ~ .checkbox-icon {
+    border-color: rgba(125, 135, 144, 0.5);
+  }
   &:checked ~ .checkbox-icon:after {
     border-color: #fff;
   }
